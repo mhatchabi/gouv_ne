@@ -9,44 +9,10 @@ import Link from "next/link";
 import LargeScreenMenu from "./LargeScreenMenu";
 import MobileScreenMenu from "./MobileScreenMenu";
 import SearchIcon from "@mui/icons-material/Search";
-
-const institutions = [
-  { urlLabel: "Présidence", url: "#" },
-  { urlLabel: "Assemblée Nationale", url: "#" },
-  { urlLabel: "Gouvernement", url: "#" },
-  { urlLabel: "Cour des Comptes", url: "#" },
-  { urlLabel: "Cour Constitutionnelle", url: "#" },
-  { urlLabel: "Cour de Cassation", url: "#" },
-  { urlLabel: "Conseil d'Etat", url: "#" },
-  { urlLabel: "Commission Nationale Electorale Indépendante", url: "#" },
-  { urlLabel: "Conseil Supérieur de la Communication", url: "#" },
-  { urlLabel: "Conseil Economique, Social et Culturel", url: "#" },
-  { urlLabel: "Médiature de la République", url: "#" },
-  { urlLabel: "Commission Nationale des Droits Humains", url: "#" },
-];
-
-const primature = [
-  { urlLabel: "Biographie du Premier Ministre", url: "#" },
-  { urlLabel: "Cabinet", url: "#" },
-  { urlLabel: "Secrétariat Général du Gouvernement", url: "#" },
-  { urlLabel: "Etablissements sous tutelle", url: "#" },
-  { urlLabel: "Les Anciens Premiers Ministres", url: "#" },
-];
-
-const texteFondamentaux = [
-  { urlLabel: "Constitution de la 7ème République", url: "#" },
-  { urlLabel: "Code Electoral", url: "#" },
-  { urlLabel: "Charte des Partis politiques", url: "#" },
-  { urlLabel: "Statut de l'opposition", url: "#" },
-  { urlLabel: "Autres Textes", url: "#" },
-  { urlLabel: "Recueil de Textes", url: "#" },
-];
-
-const tourismInfo = [
-  { urlLabel: "Présentation", url: "#" },
-  { urlLabel: "Les Symboles", url: "#" },
-  { urlLabel: "Les Sites touristiques du Niger", url: "#" },
-];
+import texteFondamentaux from "../../data/texteFondamentaux";
+import institutions from "../../data/institutions";
+import primature from "../../data/primature";
+import tourismInfo from "@/data/tourismInfo";
 
 const sousMenuData = {
   institutions,
