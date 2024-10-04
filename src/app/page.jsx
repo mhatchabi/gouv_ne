@@ -1,4 +1,5 @@
 import Gouvernement from "@/components/view/home/ Gouvernement";
+import Audiences from "@/components/view/home/Audiences";
 import PremierMinistre from "@/components/view/home/PremierMinistre";
 import Slider from "@/components/view/home/Slider";
 import TextesFondamentaux from "@/components/view/home/TextesFondamentaux";
@@ -24,7 +25,9 @@ export default function Home() {
       <PremierMinistre />
 
       {/* Audiences */}
-      
+      <div className="bg-gray-100">
+        <Audiences />
+      </div>
 
       {/*
       <div className="flex items-center justify-center text-2xl font-bold bg-yellow-300 h-52">

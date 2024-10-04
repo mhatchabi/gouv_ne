@@ -1,6 +1,12 @@
 import React from "react";
 
 const PremierMinistre = () => {
+  const pmData = {
+    name: "Ali Lamine Zeine",
+    grade:
+      "Premier Ministre, Chef du Gouvernement, Ministre de l'économie et des Finances",
+  };
+
   return (
     <section className="container p-5 mx-auto" style={{ maxWidth: "1200px" }}>
       <header>
@@ -16,12 +22,11 @@ const PremierMinistre = () => {
         </div>
         <div className="flex flex-col items-stretch col-span-5 p-5 lg:col-span-3">
           <h2 className="mb-2 text-2xl font-bold lg:!text-4xl lg:mb-3">
-            SE. Ali Lamine Zeine
+            SE. {pmData.name}
           </h2>
-          <div className="hidden lg:block">
+          <div>
             <p className="text-xl text-gray-500 lg:line-clamp-3">
-              Premier Ministre, Chef du Gouvernement, Ministre de l'économie et
-              des Finances
+              {pmData.grade}
             </p>
           </div>
           <div className="flex-grow"></div>
