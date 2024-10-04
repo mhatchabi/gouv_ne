@@ -54,7 +54,7 @@ const Audiences = () => {
       <div className="flex flex-wrap justify-center gap-5 p-5">
         {[1, 2, 3].map((_, index) => card())}
       </div>
-      <div style={{maxWidth: "1250px"}}>
+      <div style={{maxWidth: "1200px", margin: "auto"}} className="px-5">
         <Link href={"#"} className="flex items-center justify-end">
           Voir plus{" "}
           <svg
