@@ -32,7 +32,7 @@ const TextesFondamentaux = () => {
 
   return (
     <section className="container p-5 mx-auto" style={{ maxWidth: "1200px" }}>
-      <h1 className="text-4xl font-bold text-center">Textes Fondamentaux</h1>
+      <h2 className="text-4xl font-bold text-center">Textes Fondamentaux</h2>
       <div className="grid grid-cols-1 gap-4 my-5 sm:grid-cols-2 md:grid-cols-3">
         {textes.map((item, index) => (
           <Link href={item.link} key={index} className="block h-full">
