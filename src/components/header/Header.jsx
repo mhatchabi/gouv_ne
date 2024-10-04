@@ -84,7 +84,7 @@ function Header() {
       className="sticky top-0 flex items-start justify-center bg-white shadow-lg"
       style={{ zIndex: "100" }}
     >
-      <div className="container">
+      <div className="container max-w-[1200px]" style={{maxWidth: "1200px"}}>
         <div>
           <div className="flex flex-col justify-center p-5 md:flex-row md:justify-between">
             <Link href={"#"} className="items-center justify-center md:flex">
