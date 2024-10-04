@@ -1,19 +1,19 @@
 import React from "react";
 import Link from "next/link";
 
-const card = (item) => (
-  <article className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+const card = (item, index) => (
+  <article key={index} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
       <img
         className="w-full h-64 rounded-t-lg"
-        src="https://www.gouv.ne/cache/mod_bt_contentslider/d3788c94f620cdc69ef0020e02c727c2-img-20241002-wa0170.jpg"
+        src={item.image}
         alt=""
       />
     </a>
     <div className="p-5">
       <a href="#">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          Noteworthy technology acquisitions 2021
+          {item.title}
         </h5>
       </a>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -46,15 +46,36 @@ const card = (item) => (
 );
 
 const Audiences = () => {
+  const audiences = [
+    {
+      title:
+        "Le Premier Ministre reçoit l’ambassadeur du Royaume du Maroc au Niger",
+      image: "https://www.gouv.ne/cache/mod_bt_contentslider/d3788c94f620cdc69ef0020e02c727c2-img-20241002-wa0170.jpg",
+      link: "#",
+    },
+    {
+      title:
+        "13ème édition de la journée d'excellence et du mérite",
+      image: "https://www.gouv.ne/cache/mod_bt_contentslider/03dc853a22bf222c537e6dfd364ed955-img-20240921-wa0016_3.jpg",
+      link: "#",
+    },
+    {
+      title:
+        "Reception de l'ambassadeur du Royaume du Maroc au NigerUne Délégation de la République d’Azerbaïdjan",
+      image: "https://www.gouv.ne/cache/mod_bt_contentslider/e0bfb88298b020c41e0c8f22e7ea43f0-img-20240909-wa0052_0.jpg",
+      link: "#",
+    },
+  ];
+
   return (
     <section className="container p-5 mx-auto" style={{ maxWidth: "1400px" }}>
       <header>
         <h2 className="text-4xl font-bold text-center">Audiences</h2>
       </header>
       <div className="flex flex-wrap justify-center gap-5 p-5">
-        {[1, 2, 3].map((_, index) => card())}
+        {audiences.map((i, index) => card(i, index))}
       </div>
-      <div style={{maxWidth: "1200px", margin: "auto"}} className="px-5">
+      <div style={{ maxWidth: "1200px", margin: "auto" }} className="px-5">
         <Link href={"#"} className="flex items-center justify-end">
           Voir plus{" "}
           <svg
