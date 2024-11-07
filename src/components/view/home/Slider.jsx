@@ -21,7 +21,7 @@ const SliderItem = ({ item }) => (
     <div className="flex-grow"></div>
     <div>
       <button className="my-2 bg-[#F57B1E] px-10 py-2 rounded-lg hover:bg-[#f06e0a]">
-        Lire l'article
+        Lire l`&apos;`article
       </button>
     </div>
   </div>

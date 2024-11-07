@@ -50,7 +50,7 @@ function Footer() {
               </Link>
               <Link href={"#"}>
                 <li className="px-4 py-2 ml-2 border-b-2 border-transparent hover:border-[#E55E19]">
-                  Conseil d'Etat
+                  Conseil d`&apos;`Etat
                 </li>
               </Link>
               <Link href={"#"}>
@@ -130,7 +130,7 @@ function Footer() {
               </Link>
               <Link href={"#"}>
                 <li className="px-4 py-2 ml-2 border-b-2 border-transparent hover:border-[#E55E19]">
-                  Statut de l'opposition
+                  Statut de l`&apos;`opposition
                 </li>
               </Link>
               <Link href={"#"}>
