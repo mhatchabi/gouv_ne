@@ -5,19 +5,11 @@ import Link from "next/link";
 const TextesFondamentaux = () => {
   const textes = [
     {
-      title: "Constitution 7ème République",
+      title: "Ordonnance n°2023-01",
       link: "#",
     },
     {
-      title: "Code Electoral",
-      link: "#",
-    },
-    {
-      title: "Charte des Partis Politiques",
-      link: "#",
-    },
-    {
-      title: "Status de l'Opposition",
+      title: "Ordonnance n°2023-02",
       link: "#",
     },
     {
